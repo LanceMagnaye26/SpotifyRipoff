@@ -4,6 +4,9 @@
 <head>
     <title>Spotify Copycat</title>
 
+
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -16,7 +19,7 @@
 
     <!-- CSS -->
     <link href='/css/menufooter.css' type='text/css' rel='stylesheet' />
-    <link href='/css/search.css' type='text/css' rel='stylesheet' />
+    <link href='/css/style.css' type='text/css' rel='stylesheet' />
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -29,9 +32,9 @@
 
 </head>
 
-<body style="background-color: darkslategray;">
+<body>
 
-    <div class="container" id="container">
+    <div class="container-fluid" id="container">
 
         <!-- menu -->
         <div class="row" id="fullmenu">
@@ -43,8 +46,7 @@
                     </div>
 
                     <a class="nav-link" id="search-tab" data-toggle="pill" href="#search" role="tab" aria-controls="search"
-                        aria-selected="true"><span class="icons octicon octicon-search">
-                        </span>Search</a>
+                        aria-selected="true"><span class="icons octicon octicon-search"></span>Search</a>
                     <a class="nav-link" id="home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="home"
                         aria-selected="false"><span class="icons octicon octicon-home"></span>Home</a>
                     <a class="nav-link" id="library-tab" data-toggle="pill" href="#library" role="tab" aria-controls="library"
@@ -66,227 +68,104 @@
                 </div>
 
             </div>
-            <div class="col-10">
+            <div class="col-10 container-fluid" id="tab-container">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="search-tab">
-
-                        <div id="searchbar"></div>
-
-                        <div class="container" id="search">
-                            <div id="empty2"></div>
-                            <div class="row justify-content-md-center" id="buttons">
-                                <div class="col-lg-2 col-sm-4 smalltext">TOP RESULTS</div>
-                                <div class="col-lg-2 col-sm-4 smalltext">ARTISTS</div>
-                                <div class="col-lg-2 col-sm-4 smalltext">SONGS</div>
-                                <div class="col-lg-2 col-sm-4 smalltext">ALBUMS</div>
+                    <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="search-tab">Search</div>
+                    <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+                    <div class="tab-pane fade" id="library" role="tabpanel" aria-labelledby="library-tab">
+                        <div style="height:50px;"></div>
+                        <div class="clearfix" id="nav" style="display: flex; align-content: center">
+                            <div class="row justify-content-md-center topText" id="buttons" style="flex: 9">
+                                <div class="col-lg-2 col-sm-5 smalltext">PLAYLISTS</div>
+                                <div class="col-lg-2 col-sm-5 smalltext">MADE FOR YOU</div>
+                                <div class="col-lg-2 col-sm-5 smalltext">SONGS</div>
+                                <div class="col-lg-2 col-sm-5 smalltext">ALBUMS</div>
+                                <div class="col-lg-2 col-sm-5 smalltext">ARTISTS</div>
+                                <div class="col-lg-2 col-sm-5 smalltext">PODCASTS</div>
                             </div>
-                            <div id="topresults">
-                                <div class="row song">
-                                    <div class="col-11">
-                                        <h5 class="smalltext">IRL_IRL</h5>
-                                        <h6 class="smalltext">Desu</h6>
-                                    </div>
-                                    <div class="col-1 greytext">
-                                        7:11
-                                    </div>
-                                </div>
-
-                                <div class="row song">
-                                    <div class="col-11">
-                                        <h5 class="smalltext">IRL_IRL</h5>
-                                        <h6 class="smalltext">Desu</h6>
-                                    </div>
-                                    <div class="col-1 greytext">
-                                        7:11
-                                    </div>
-                                </div>
-
-                                <div class="row song">
-                                    <div class="col-11">
-                                        <h5 class="smalltext">IRL_IRL</h5>
-                                        <h6 class="smalltext">Desu</h6>
-                                    </div>
-                                    <div class="col-1 greytext">
-                                        7:11
-                                    </div>
-                                </div>
-                            </div>
-                            <h2 class="smalltext label">Artists</h2>
-                            <div class="container-fluid row label" style="width:100%;" id="artists">
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                            </div>
-
-                            <div class="container-fluid row label" style="width:100%;" id="artists">
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                            </div>
-
-                            <h2 class="smalltext label">Albulms</h2>
-                            <div class="container-fluid row label" style="width:100%;" id="artists">
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                            </div>
-
-                            <div class="container-fluid row label" style="width:100%;" id="artists">
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
-                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
-                                    <h3 class="smalltext">Desu</h3>
-                                </div>
-
-                            </div>
-
-                            <div id="topresults">
-                                <div class="row song">
-                                    <div class="col-11">
-                                        <h5 class="smalltext">IRL_IRL</h5>
-                                        <h6 class="smalltext">Desu</h6>
-                                    </div>
-                                    <div class="col-1 greytext">
-                                        7:11
-                                    </div>
-                                </div>
-
-                                <div class="row song">
-                                    <div class="col-11">
-                                        <h5 class="smalltext">IRL_IRL</h5>
-                                        <h6 class="smalltext">Desu</h6>
-                                    </div>
-                                    <div class="col-1 greytext">
-                                        7:11
-                                    </div>
-                                </div>
+                            <button type="button" class="btn btn-success rounded-top rounded-bottom" style="flex:1; margin-left: 10%;">New
+                                Playlist</button>
                         </div>
-                        <div id="empty2"></div>
+                        <div class="container-fluid row label" style="width:100%;" id="artists">
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/7/7a/Sweetener_album_cover.png" />
+                                <h3 class="smalltext name">Sweetner</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Astroworld_by_Travis_Scott.jpg/220px-Astroworld_by_Travis_Scott.jpg" />
+                                <h3 class="smalltext name">Astroworld</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/7/7a/Sweetener_album_cover.png" />
+                                <h3 class="smalltext name">Sweetner</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Astroworld_by_Travis_Scott.jpg/220px-Astroworld_by_Travis_Scott.jpg" />
+                                <h3 class="smalltext name">Astroworld</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/7/7a/Sweetener_album_cover.png" />
+                                <h3 class="smalltext name">Sweetner</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Astroworld_by_Travis_Scott.jpg/220px-Astroworld_by_Travis_Scott.jpg" />
+                                <h3 class="smalltext name">Astroworld</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="container-fluid row label" style="width:100%;" id="artists">
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/2/28/Channel_ORANGE.jpg" />
+                                <h3 class="smalltext name">Channel Orange</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/2/28/Channel_ORANGE.jpg" />
+                                <h3 class="smalltext name">Channel Orange</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/2/28/Channel_ORANGE.jpg" />
+                                <h3 class="smalltext name">Channel Orange</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/2/28/Channel_ORANGE.jpg" />
+                                <h3 class="smalltext name">Channel Orange</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/2/28/Channel_ORANGE.jpg" />
+                                <h3 class="smalltext name">Channel Orange</h3>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                <img class="artistimg" src="https://upload.wikimedia.org/wikipedia/en/2/28/Channel_ORANGE.jpg" />
+                                <h3 class="smalltext name">Channel Orange</h3>
+                            </div>
+
+                        </div>
                     </div>
-
-
                 </div>
-                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
-                <div class="tab-pane fade" id="library" role="tabpanel" aria-labelledby="library-tab">Your Library</div>
             </div>
         </div>
-    </div>
-    <!-- media player -->
-    <div class="row align-items-center" id="media-container">
-        <div class="col-12" id="media-player">
-            <span class="media-icons octicon octicon-git-compare"></span>
-            <span class="media-icons octicon octicon-chevron-left"></span>
-            <span class="media-icons octicon octicon-triangle-right"></span>
-            <span class="media-icons octicon octicon-chevron-right"></span>
-            <span class="media-icons octicon octicon-circuit-board"></span>
+        <!-- media player -->
+        <div class="row align-items-center" id="media-container">
+            <div class="col-12" id="media-player">
+                <span class="media-icons octicon octicon-git-compare"></span>
+                <span class="media-icons octicon octicon-chevron-left"></span>
+                <span class="media-icons octicon octicon-triangle-right"></span>
+                <span class="media-icons octicon octicon-chevron-right"></span>
+                <span class="media-icons octicon octicon-circuit-board"></span>
 
+            </div>
         </div>
-    </div>
     </div>
 
 </body>
