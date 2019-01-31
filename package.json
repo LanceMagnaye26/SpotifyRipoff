@@ -1,0 +1,20 @@
+{
+  "name": "team-bcit",
+  "version": "1.0.0",
+  "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://ACIT3625-2019W@dev.azure.com/ACIT3625-2019W/Team-BCIT/_git/Team-BCIT"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "octicons": "^8.3.0",
+    "pg": "^7.8.0"
+  }
+}

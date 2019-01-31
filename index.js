@@ -15,7 +15,7 @@ app.use("/css", exp.static("style"));
 app.use("/pages",exp.static("public"));
 app.use("/dependencies",exp.static("src"))
 
-app.get("/menufooter", function(req, resp){
+app.get("/", function(req, resp){
     resp.sendFile(pF+"/menufooter.html")
 });
 
