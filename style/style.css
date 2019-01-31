@@ -3,17 +3,6 @@
     width:100vw;
 }
 
-.spotBut {
-    background:    #1db954;
-border-radius: 1000px;
-width:         200px;
-height:        50px;
-color:         #ffffff;
-display:       inline-block;
-font:          normal 400 22px/50px "Zenhei", sans-serif;
-text-align:    center;
-}
-
 html, body {
     max-width: 100%;
 }
@@ -75,6 +64,8 @@ html, body {
 .smalltext{
     color:white;
     font-size: 10pt;
+    font-family: 'Arial';
+    font-weight: bold;
 }
 
 .label{
@@ -98,4 +89,8 @@ html, body {
 .albulmimg {
     width:100%;
     border-radius: 0%;
+}
+
+.name {
+    margin-top: 10px;
 }
