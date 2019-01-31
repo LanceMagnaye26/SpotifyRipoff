@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Spotify Copycat</title>
+
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- octicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css">
+
+    <!-- CSS -->
+    <link href='/css/menufooter.css' type='text/css' rel='stylesheet' />
+    <link href='/css/search.css' type='text/css' rel='stylesheet' />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color: darkslategray;">
+
+    <div class="container" id="container">
+
+        <!-- menu -->
+        <div class="row" id="fullmenu">
+            <div class="col-2" id="menutop">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"
+                    style="height: 100%;">
+                    <div id="menu-title">
+                        <h4 class="text-center"><span class="icon-title octicon octicon-rss"></span>Spotify</h3>
+                    </div>
+
+                    <a class="nav-link" id="search-tab" data-toggle="pill" href="#search" role="tab" aria-controls="search"
+                        aria-selected="true"><span class="icons octicon octicon-search">
+                        </span>Search</a>
+                    <a class="nav-link" id="home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="home"
+                        aria-selected="false"><span class="icons octicon octicon-home"></span>Home</a>
+                    <a class="nav-link" id="library-tab" data-toggle="pill" href="#library" role="tab" aria-controls="library"
+                        aria-selected="false"><span class="icons octicon octicon-book"></span>Your Library</a>
+
+                    <!-- menu footer -->
+                    <div id="menufooter" class="align-middle">
+                        <a class="btn btn-primary text-center align-middle btn-block" id="signup-but" href="/signup">SIGN
+                            UP</a>
+                        <a class="btn btn-outline-light text-center align-middle btn-block" id="login-but" href="/login">LOG
+                            IN</a>
+
+                        <div class="d-flex flex-row bd-highlight mb-3 justify-content-center" id="cp">
+                            <div class="bd-highlight"><a href="/cookies" class="footer-links">Cookies</a></div>
+                            <div class="bd-highlight">|</div>
+                            <div class="bd-highlight"><a href="/privacy" class="footer-links">Privacy</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-10">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="search-tab">
+
+                        <div id="searchbar"></div>
+
+                        <div class="container" id="search">
+                            <div id="empty2"></div>
+                            <div class="row justify-content-md-center" id="buttons">
+                                <div class="col-lg-2 col-sm-4 smalltext">TOP RESULTS</div>
+                                <div class="col-lg-2 col-sm-4 smalltext">ARTISTS</div>
+                                <div class="col-lg-2 col-sm-4 smalltext">SONGS</div>
+                                <div class="col-lg-2 col-sm-4 smalltext">ALBUMS</div>
+                            </div>
+                            <div id="topresults">
+                                <div class="row song">
+                                    <div class="col-11">
+                                        <h5 class="smalltext">IRL_IRL</h5>
+                                        <h6 class="smalltext">Desu</h6>
+                                    </div>
+                                    <div class="col-1 greytext">
+                                        7:11
+                                    </div>
+                                </div>
+
+                                <div class="row song">
+                                    <div class="col-11">
+                                        <h5 class="smalltext">IRL_IRL</h5>
+                                        <h6 class="smalltext">Desu</h6>
+                                    </div>
+                                    <div class="col-1 greytext">
+                                        7:11
+                                    </div>
+                                </div>
+
+                                <div class="row song">
+                                    <div class="col-11">
+                                        <h5 class="smalltext">IRL_IRL</h5>
+                                        <h6 class="smalltext">Desu</h6>
+                                    </div>
+                                    <div class="col-1 greytext">
+                                        7:11
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="smalltext label">Artists</h2>
+                            <div class="container-fluid row label" style="width:100%;" id="artists">
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="container-fluid row label" style="width:100%;" id="artists">
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="artistimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                            </div>
+
+                            <h2 class="smalltext label">Albulms</h2>
+                            <div class="container-fluid row label" style="width:100%;" id="artists">
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="container-fluid row label" style="width:100%;" id="artists">
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 col-lg-2" style="text-align: center">
+                                    <img class="albulmimg" src="https://i.redd.it/d6ssgyua9i821.jpg" />
+                                    <h3 class="smalltext">Desu</h3>
+                                </div>
+
+                            </div>
+
+                            <div id="topresults">
+                                <div class="row song">
+                                    <div class="col-11">
+                                        <h5 class="smalltext">IRL_IRL</h5>
+                                        <h6 class="smalltext">Desu</h6>
+                                    </div>
+                                    <div class="col-1 greytext">
+                                        7:11
+                                    </div>
+                                </div>
+
+                                <div class="row song">
+                                    <div class="col-11">
+                                        <h5 class="smalltext">IRL_IRL</h5>
+                                        <h6 class="smalltext">Desu</h6>
+                                    </div>
+                                    <div class="col-1 greytext">
+                                        7:11
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="empty2"></div>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+                <div class="tab-pane fade" id="library" role="tabpanel" aria-labelledby="library-tab">Your Library</div>
+            </div>
+        </div>
+    </div>
+    <!-- media player -->
+    <div class="row align-items-center" id="media-container">
+        <div class="col-12" id="media-player">
+            <span class="media-icons octicon octicon-git-compare"></span>
+            <span class="media-icons octicon octicon-chevron-left"></span>
+            <span class="media-icons octicon octicon-triangle-right"></span>
+            <span class="media-icons octicon octicon-chevron-right"></span>
+            <span class="media-icons octicon octicon-circuit-board"></span>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
