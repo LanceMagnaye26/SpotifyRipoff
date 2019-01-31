@@ -1,6 +1,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    background-color: black;
 }
 
 body{
@@ -14,6 +15,7 @@ body{
     width: 100%;
     position: relative;
     margin-right: 0px;
+   
 }
 
 /*

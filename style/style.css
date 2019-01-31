@@ -1,0 +1,101 @@
+#main {
+    height:100vh;
+    width:100vw;
+}
+
+.spotBut {
+    background:    #1db954;
+border-radius: 1000px;
+width:         200px;
+height:        50px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal 400 22px/50px "Zenhei", sans-serif;
+text-align:    center;
+}
+
+html, body {
+    max-width: 100%;
+}
+
+#overlay{
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    left:0px;
+    top:0px;
+}
+
+#navbar{
+    background-color: black;
+    height:100%;
+    width:20%;
+    z-index: 19;
+}
+
+#player{
+    height:10%;
+    width: 100%;
+    position: absolute;
+    bottom:0px;
+    background-color: rgb(40,40,40);
+    z-index: 20;
+}
+
+#search {
+    z-index: -2;
+}
+
+#searchbar {
+    width: 101%;
+    height: 10%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 18;
+    background-color: rgb(40,40,40);
+}
+
+#searchinput {
+    background-color: rgb(40,40,40);
+    color: white;
+    font-size: 40px;
+}
+
+#empty {
+    height: 12%;
+}
+
+#buttons {
+    position: relative;
+    text-align: center;
+    
+}
+
+.smalltext{
+    color:white;
+    font-size: 10pt;
+}
+
+.label{
+    text-align: center;
+    margin-top:20px;
+}
+
+.greytext{
+    color: grey;
+}
+
+.song {
+    width: 100%;
+    height:10%;
+}
+
+.artistimg {
+    width:100%;
+}
+
+.albulmimg {
+    width:100%;
+    border-radius: 0%;
+}
