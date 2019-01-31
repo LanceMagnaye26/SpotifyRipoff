@@ -1,0 +1,137 @@
+#background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 280%;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom right, rgb(148, 3, 3), black)
+}
+
+#menubar {
+    width: 65%;
+    height: 5%;
+    position: relative;
+    top: 2%;
+    left: 20%;
+}
+
+#menuitems {
+    float: left;
+    margin-left: 4%;
+    color: rgb(175, 175, 175);
+    font-size: 12px;
+}
+
+#menuitems:hover {
+    float: left;
+    margin-left: 4%;
+    color: white;
+    font-size: 12px;
+}
+
+#featuredcharts {
+    position: relative;
+    top: 4%;
+    font-size: 32px;
+    font-weight: bold;
+    left: 2%;
+    color: white;
+}
+
+#featureditems {
+    position: relative;
+    width: 99%;
+    height: 13%;
+    top: 4.5%;
+    left: 1%;
+}
+
+#cover1 {
+    float: left;
+    margin-left: 1.5%;
+    height: 225px;
+    width: 190px;
+    background-image: url(https://consequenceofsound.files.wordpress.com/2018/07/travis-scott-astroworld-cover-art.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#cover1text {
+    position: relative;
+    top: 180px;
+    height: 40px;
+    color: white;
+}
+
+#top50 {
+    position: relative;
+    top: 6%;
+    left: 1%;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+#top50items {
+    position: relative;
+    width: 99%;
+    height: 28%;
+    top: 6%;
+    left: 1%;
+}
+
+#cover2 {
+    float: left;
+    margin-left: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 2%; 
+    height: 225px;
+    width: 190px;
+    background-image: url(https://www.billboard.com/files/styles/900_wide/public/media/kids-see-ghosts-album-art-2018-billboard-1240.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#cover2text {
+    position: relative;
+    top: 215px;
+    height: 40px;
+    color: white;
+}
+
+#viral50 {
+    position: relative;
+    top: 10.5%;
+    font-size: 32px;
+    font-weight: bold;
+    left: 1%;
+    color: white;
+}
+
+#viral50items {
+    position: relative;
+    width: 99%;
+    height: 28%;
+    top: 11.5%;
+    left: 1%;
+}
+
+#cover3 {
+    float: left;
+    margin-left: 1.5%;
+    margin-top: 1%; 
+    height: 225px;
+    width: 190px;    
+    margin-bottom: 2%; 
+    background-image: url(https://www.billboard.com/files/styles/900_wide/public/media/ariana-grande-sweetner-album-art-2018-billboard-1240.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#cover3text {
+    position: relative;
+    top: 215px;
+    height: 40px;
+    color: white;
+}
