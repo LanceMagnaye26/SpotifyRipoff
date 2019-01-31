@@ -12,6 +12,12 @@ html, body {
     top:0px;
 }
 
+#grad{
+    background-color: #cccccc;
+    background-image: linear-gradient(rgb(0, 11, 114), black);
+}
+
+
 #navbar{
     background-color: black;
     height:100%;
@@ -29,9 +35,6 @@ html, body {
 #searchbar {
     width: 100%;
     height: 7vh;
-    position: absolute;
-    top:0px;
-    left:0px;
     z-index: 2;
     background-color: rgb(40,40,40);
 }
@@ -52,7 +55,6 @@ html, body {
 
 .smalltext{
     color:WHITE;
-    z-index: -6;
 }
 
 .label{
@@ -62,7 +64,6 @@ html, body {
 
 .greytext{
     color: grey;
-    z-index: -3;
 }
 
 .song {
@@ -73,11 +74,9 @@ html, body {
 .artistimg {
     width:100%;
     border-radius: 50%;
-    z-index: -3;
 }
 
 .albulmimg {
     width:100%;
     border-radius: 0%;
-    z-index: -3;
 }
