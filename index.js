@@ -19,7 +19,7 @@ app.get("/menufooter", function(req, resp){
     resp.sendFile(pF+"/menufooter.html")
 });
 
-server.listen(10000, function(err){
+server.listen(8090, function(err){
     if(err){
         console.log(err);
         return false;

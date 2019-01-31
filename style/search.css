@@ -1,0 +1,83 @@
+
+
+html, body {
+    max-width: 100%;
+}
+
+#overlay{
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    left:0px;
+    top:0px;
+}
+
+#navbar{
+    background-color: black;
+    height:100%;
+    width:20%;
+}
+
+#player{
+    height:10%;
+    width: 100%;
+    position: absolute;
+    bottom:0px;
+    background-color: rgb(40,40,40);
+}
+
+#searchbar {
+    width: 100%;
+    height: 7vh;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 2;
+    background-color: rgb(40,40,40);
+}
+
+#searchinput {
+    background-color: rgb(40,40,40);
+    color: white;
+    font-size: 40px;
+}
+
+#empty2 {
+    height: 7vh;
+}
+
+#buttons {
+    text-align: center;
+}
+
+.smalltext{
+    color:WHITE;
+    z-index: -6;
+}
+
+.label{
+    text-align: center;
+    margin-top:20px;
+}
+
+.greytext{
+    color: grey;
+    z-index: -3;
+}
+
+.song {
+    width: 100%;
+    height:10%;
+}
+
+.artistimg {
+    width:100%;
+    border-radius: 50%;
+    z-index: -3;
+}
+
+.albulmimg {
+    width:100%;
+    border-radius: 0%;
+    z-index: -3;
+}
